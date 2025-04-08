@@ -1,0 +1,149 @@
+:root {
+	--primary: #e4d2cc;
+	--Xetech: #9b84c3;
+	--Basecamp: #ea9950;
+	--Emails: #e4d2cc;
+	--personal: #A3C9A8;
+
+	--light: #e4d2cc;
+	--grey: #888;
+	--dark: #222021;
+	--danger: #ea9950;
+
+	--shadow: 0 10px 3px rgba(0, 0, 0, 0.1);
+
+	--Xetech-glow: #9b84c3;
+	--Basecamp-glow: #ea9950;
+	--Emails-glow: #e4d2cc;
+	--personal-glow: #A3C9A8;
+}
+
+
+body {
+	background: #e4d2cc;
+	color: var(--dark);
+}
+
+/* Pomodoro Timer Container */
+.pomodoro-timer {
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+    padding: 2rem;
+    background-color: var(--light);
+    margin: auto;
+    overflow: hidden;
+    border: 3px solid var(--dark); /* Subtle border to highlight the timer */
+    position: relative;
+    animation: fadeIn 1.2s ease-out; /* Smooth fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Timer Display */
+.timer-display {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Timer Controls Buttons */
+.timer-controls button {
+    margin: 0.5rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--Basecamp); /* Warm color for buttons */
+    color: var(--dark);
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft button shadow */
+}
+
+/* Button hover and active states */
+.timer-controls button:hover {
+    background-color: var(--Basecamp-glow); /* Glow effect on hover */
+    transform: translateY(-4px); /* Slight lift effect */
+}
+
+.timer-controls button:active {
+    background-color: var(--danger);
+    transform: translateY(2px); /* Slight press-down effect */
+}
+
+/* Radio Button Styling */
+
+.timer-mode label {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--dark);
+    background-color: var(--Xetech);
+    border: 2px solid var(--Xetech);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    text-transform: capitalize;
+}
+
+/* Hover effect */
+.timer-mode label:hover {
+    background-color: var(--Xetech-glow); /* Glowing effect on hover */
+    transform: scale(1.05);
+}
+
+/* When selected */
+.timer-mode input:checked + label {
+    background-color: var(--dark);
+    color: var(--Xetech);
+    border-color: var(--Xetech);
+}
+
+/* Wrapper for centering everything vertically and horizontally */
+.pomodoro-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 50px); /* Adjusting for navbar */
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Lightened background behind timer */
+    border-radius: 25px;
+}
+
+/* Spotify Embed */
+.spotify-embed {
+    width: 100%;
+    max-width: 650px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Darker shadow for contrast */
+    background-color: var(--light);
+    transition: transform 0.3s ease-in-out;
+}
+
+.spotify-embed:hover {
+    transform: scale(1.05); /* Smooth zoom effect on hover */
+}
+
+.spotify-embed iframe {
+    border: none;
+}

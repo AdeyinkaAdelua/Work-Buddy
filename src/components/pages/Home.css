@@ -1,0 +1,107 @@
+/* Home.css */
+
+
+
+h1{
+  color: #222021;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+
+.home {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .quick-pick-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .quick-pick-box {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .quick-pick-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .quick-pick-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .quick-pick-box p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .quick-pick-box a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .preview-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .quick-pick-box {
+    background-color: #222021;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    height: 10%;
+    width: 45%;
+    margin-top: 3%;
+  }
+  
+  .quick-pick-box ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .quick-pick-box li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+
+  .preview-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 20px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if height is specified */
+  }
+  
+
+  
+  .preview-card {
+    padding: 2.75rem;
+    border-radius: 10px;
+    color: #222021;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex-grow: 1;
+
+  }
+  
